@@ -26,7 +26,7 @@ local AALabel = Instance.new("TextLabel")
 --Properties:
 
 PinkApple.Name = "PinkApple"
-PinkApple.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PinkApple.Parent = game.CoreGui
 
 Holder.Name = "Holder"
 Holder.Parent = PinkApple
