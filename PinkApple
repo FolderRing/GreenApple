@@ -16,11 +16,17 @@ local AutoRecoil = Instance.new("TextButton")
 local ARLabel = Instance.new("TextLabel")
 local RageBot = Instance.new("TextButton")
 local RBLabel = Instance.new("TextLabel")
+local ForceCH = Instance.new("TextButton")
+local FCLabel = Instance.new("TextLabel")
+local FakePeek = Instance.new("TextButton")
+local FPLabel = Instance.new("TextLabel")
+local AntiAim = Instance.new("TextButton")
+local AALabel = Instance.new("TextLabel")
 
 --Properties:
 
 PinkApple.Name = "PinkApple"
-PinkApple.Parent = game.CoreGui
+PinkApple.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Holder.Name = "Holder"
 Holder.Parent = PinkApple
@@ -154,9 +160,78 @@ RBLabel.Text = "Ragebot"
 RBLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
 RBLabel.TextSize = 17.000
 
+ForceCH.Name = "ForceCH"
+ForceCH.Parent = Holder
+ForceCH.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+ForceCH.BorderSizePixel = 0
+ForceCH.Position = UDim2.new(0, 0, 0.559228659, 0)
+ForceCH.Size = UDim2.new(0, 30, 0, 30)
+ForceCH.Font = Enum.Font.SourceSans
+ForceCH.Text = " "
+ForceCH.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForceCH.TextSize = 14.000
+
+FCLabel.Name = "FCLabel"
+FCLabel.Parent = ForceCH
+FCLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FCLabel.BackgroundTransparency = 1.000
+FCLabel.BorderSizePixel = 0
+FCLabel.Position = UDim2.new(1, 0, 0, 0)
+FCLabel.Size = UDim2.new(0, 127, 0, 29)
+FCLabel.Font = Enum.Font.GothamBold
+FCLabel.Text = "Force Crosshair"
+FCLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+FCLabel.TextSize = 17.000
+
+FakePeek.Name = "FakePeek"
+FakePeek.Parent = Holder
+FakePeek.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+FakePeek.BorderSizePixel = 0
+FakePeek.Position = UDim2.new(0, 0, 0.6418733, 0)
+FakePeek.Size = UDim2.new(0, 30, 0, 30)
+FakePeek.Font = Enum.Font.SourceSans
+FakePeek.Text = " "
+FakePeek.TextColor3 = Color3.fromRGB(0, 0, 0)
+FakePeek.TextSize = 14.000
+
+FPLabel.Name = "FPLabel"
+FPLabel.Parent = FakePeek
+FPLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPLabel.BackgroundTransparency = 1.000
+FPLabel.BorderSizePixel = 0
+FPLabel.Position = UDim2.new(1, 0, 0, 0)
+FPLabel.Size = UDim2.new(0, 127, 0, 29)
+FPLabel.Font = Enum.Font.GothamBold
+FPLabel.Text = "FakePeek"
+FPLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+FPLabel.TextSize = 17.000
+
+AntiAim.Name = "AntiAim"
+AntiAim.Parent = Holder
+AntiAim.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+AntiAim.BorderSizePixel = 0
+AntiAim.Position = UDim2.new(0, 0, 0.724517941, 0)
+AntiAim.Size = UDim2.new(0, 30, 0, 30)
+AntiAim.Font = Enum.Font.SourceSans
+AntiAim.Text = " "
+AntiAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAim.TextSize = 14.000
+
+AALabel.Name = "AALabel"
+AALabel.Parent = AntiAim
+AALabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AALabel.BackgroundTransparency = 1.000
+AALabel.BorderSizePixel = 0
+AALabel.Position = UDim2.new(1, 0, 0, 0)
+AALabel.Size = UDim2.new(0, 127, 0, 29)
+AALabel.Font = Enum.Font.GothamBold
+AALabel.Text = "AntiAim (E)"
+AALabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+AALabel.TextSize = 17.000
+
 -- Scripts:
 
-local function WQDP_fake_script() -- PinkApple.namerandomizer 
+local function GZNWHFM_fake_script() -- PinkApple.namerandomizer 
 	local script = Instance.new('LocalScript', PinkApple)
 
 	local rn = math.random(1,10) 
@@ -201,15 +276,15 @@ local function WQDP_fake_script() -- PinkApple.namerandomizer
 		script.Parent.Name = "PinkApple_yapostroz582135x"
 	end
 end
-coroutine.wrap(WQDP_fake_script)()
-local function UNXFGF_fake_script() -- Holder.dragreal 
+coroutine.wrap(GZNWHFM_fake_script)()
+local function WEBGP_fake_script() -- Holder.dragreal 
 	local script = Instance.new('LocalScript', Holder)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(UNXFGF_fake_script)()
-local function PYLBQV_fake_script() -- Holder.visible 
+coroutine.wrap(WEBGP_fake_script)()
+local function FQWIAVC_fake_script() -- Holder.visible 
 	local script = Instance.new('LocalScript', Holder)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key)
@@ -222,8 +297,8 @@ local function PYLBQV_fake_script() -- Holder.visible
 		end
 	end)
 end
-coroutine.wrap(PYLBQV_fake_script)()
-local function VLEZ_fake_script() -- ESP.Do 
+coroutine.wrap(FQWIAVC_fake_script)()
+local function JYROEQK_fake_script() -- ESP.Do 
 	local script = Instance.new('LocalScript', ESP)
 
 	local ESP = script.Parent
@@ -247,8 +322,8 @@ local function VLEZ_fake_script() -- ESP.Do
 		end
 	end)
 end
-coroutine.wrap(VLEZ_fake_script)()
-local function JMVCY_fake_script() -- LegitAimBot.Do 
+coroutine.wrap(JYROEQK_fake_script)()
+local function RHALNQ_fake_script() -- LegitAimBot.Do 
 	local script = Instance.new('LocalScript', LegitAimBot)
 
 	local LegitAimBot = script.Parent
@@ -363,8 +438,8 @@ local function JMVCY_fake_script() -- LegitAimBot.Do
 		end
 	end)
 end
-coroutine.wrap(JMVCY_fake_script)()
-local function USZQZC_fake_script() -- RageAimBot.Do 
+coroutine.wrap(RHALNQ_fake_script)()
+local function TBUTE_fake_script() -- RageAimBot.Do 
 	local script = Instance.new('LocalScript', RageAimBot)
 
 	local RageAimBot = script.Parent
@@ -479,8 +554,8 @@ local function USZQZC_fake_script() -- RageAimBot.Do
 		end
 	end)
 end
-coroutine.wrap(USZQZC_fake_script)()
-local function TJLN_fake_script() -- AutoRecoil.Do 
+coroutine.wrap(TBUTE_fake_script)()
+local function HFSH_fake_script() -- AutoRecoil.Do 
 	local script = Instance.new('LocalScript', AutoRecoil)
 
 	local AutoRecoil = script.Parent
@@ -508,8 +583,8 @@ local function TJLN_fake_script() -- AutoRecoil.Do
 		end
 	end
 end
-coroutine.wrap(TJLN_fake_script)()
-local function OFGIV_fake_script() -- RageBot.Do 
+coroutine.wrap(HFSH_fake_script)()
+local function BASC_fake_script() -- RageBot.Do 
 	local script = Instance.new('LocalScript', RageBot)
 
 	local isrbon = false
@@ -530,8 +605,94 @@ local function OFGIV_fake_script() -- RageBot.Do
 	while isrbon == true do
 		wait()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-		game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 60
 	end
 end
-coroutine.wrap(OFGIV_fake_script)()
+coroutine.wrap(BASC_fake_script)()
+local function PUAZLX_fake_script() -- ForceCH.Do 
+	local script = Instance.new('LocalScript', ForceCH)
+
+	local isfchon = false
+	
+	local RageBot = script.Parent
+	
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			isfchon = true
+		else
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			isfchon = false
+		end
+	end)
+	
+	while isfchon == true do
+		wait()
+		game.Players.LocalPlayer.PlayerGui.HUD.HUD.Crosshair.Visible = true
+	end
+end
+coroutine.wrap(PUAZLX_fake_script)()
+local function BEWUWN_fake_script() -- FakePeek.Do 
+	local script = Instance.new('LocalScript', FakePeek)
+
+	local fakepeek = false
+	
+	local RageBot = script.Parent
+	
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			fakepeek = true
+		else
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			fakepeek = false
+		end
+	end)
+	
+	while fakepeek == true do
+		wait(math.random(99,501)/100)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(10,0,10)
+		wait()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(10,0,10)
+	end
+end
+coroutine.wrap(BEWUWN_fake_script)()
+local function ZNWOII_fake_script() -- AntiAim.Do 
+	local script = Instance.new('LocalScript', AntiAim)
+
+	local antiaim = false
+	
+	local RageBot = script.Parent
+	
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			antiaim = true
+		else
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			antiaim = false
+		end
+	end)
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+		if key.KeyCode == Enum.KeyCode.E then
+			if antiaim == false then
+				antiaim = true
+				RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			else
+				antiaim = false
+				RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			end
+		end
+	end)
+	
+	while antiaim == true do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0.8,0,0.8)
+		wait()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0.8,0,0.8)
+		wait()
+	end
+end
+coroutine.wrap(ZNWOII_fake_script)()
