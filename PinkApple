@@ -605,7 +605,8 @@ local function QDPSUWA_fake_script() -- RageBot.Do
 	while wait() do
 		if isrbon == true then
 			wait()
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+		local success,errorMessage = pcall(function()	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+   end)
 		end
 	end
 end
@@ -657,10 +658,11 @@ local function WOPGO_fake_script() -- FakePeek.Do
 	while wait() do
 		if fakepeek == true then
 			wait(math.random(99,501)/100)
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(10,0,10)
+		local success,errorMessage = pcall(function()	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(10,0,10)
 			wait()
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(10,0,10)
-		end
+		end)
+  end
 	end
 end
 coroutine.wrap(WOPGO_fake_script)()
@@ -696,11 +698,12 @@ local function NVONKA_fake_script() -- AntiAim.Do
 	
 	while wait() do
 		if antiaim == true then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0.8,0,0.8)
+		local success,errorMessage = pcall(function()	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0.8,0,0.8)
 			wait()
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0.8,0,0.8)
 			wait()
-		end
+		end)
+  end
 	end
 end
 coroutine.wrap(NVONKA_fake_script)()
