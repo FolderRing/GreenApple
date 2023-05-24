@@ -1,40 +1,51 @@
+-- Gui to Lua
+-- Version: I like your mother
+
+-- Instances:
+
 local browhoyoudonotdude = Instance.new("ScreenGui")
 local Holder = Instance.new("Frame")
 local MainLabel = Instance.new("TextLabel")
+local visualstab = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local aimtab = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local antiaimtab = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local misctab = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local visualstabf = Instance.new("Frame")
 local ESP = Instance.new("TextButton")
 local ESPLabel = Instance.new("TextLabel")
+local ForceCH = Instance.new("TextButton")
+local FCLabel = Instance.new("TextLabel")
+local aimtabf = Instance.new("Frame")
+local ABTC = Instance.new("TextButton")
+local ABTCLabel = Instance.new("TextLabel")
+local AutoRecoil = Instance.new("TextButton")
+local ARLabel = Instance.new("TextLabel")
 local LegitAimBot = Instance.new("TextButton")
 local LABLabel = Instance.new("TextLabel")
 local RageAimBot = Instance.new("TextButton")
 local RABLabel = Instance.new("TextLabel")
-local AutoRecoil = Instance.new("TextButton")
-local ARLabel = Instance.new("TextLabel")
-local RageBot = Instance.new("TextButton")
-local RBLabel = Instance.new("TextLabel")
-local ForceCH = Instance.new("TextButton")
-local FCLabel = Instance.new("TextLabel")
+local antiaimtabf = Instance.new("Frame")
+local AntiAimL = Instance.new("TextButton")
+local AALabel = Instance.new("TextLabel")
 local FakePeek = Instance.new("TextButton")
 local FPLabel = Instance.new("TextLabel")
-local AntiAim = Instance.new("TextButton")
-local AALabel = Instance.new("TextLabel")
-local ABTC = Instance.new("TextButton")
-local ABTCLabel = Instance.new("TextLabel")
-local AntiAimStrength = Instance.new("Frame")
-local AAS1 = Instance.new("TextButton")
-local AAS2 = Instance.new("TextButton")
-local AAS3 = Instance.new("TextButton")
-local AAS4 = Instance.new("TextButton")
-local AAS5 = Instance.new("TextButton")
-local AAS6 = Instance.new("TextButton")
-local AAS7 = Instance.new("TextButton")
-local AAS8 = Instance.new("TextButton")
-local AAS9 = Instance.new("TextButton")
-local AAS10 = Instance.new("TextButton")
+local RageBot = Instance.new("TextButton")
+local RBLabel = Instance.new("TextLabel")
+local AntiAimSR = Instance.new("TextButton")
+local AALabel_2 = Instance.new("TextLabel")
+local AntiAimR = Instance.new("TextButton")
+local AALabel_3 = Instance.new("TextLabel")
+local miscf = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
 
---skid is gay
+--Properties:
 
 browhoyoudonotdude.Name = "browhoyoudonotdude"
-browhoyoudonotdude.Parent = game.CoreGui
+browhoyoudonotdude.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Holder.Name = "Holder"
 Holder.Parent = browhoyoudonotdude
@@ -53,11 +64,75 @@ MainLabel.Text = "PinkApple | Strike Blox"
 MainLabel.TextColor3 = Color3.fromRGB(255, 0, 157)
 MainLabel.TextSize = 25.000
 
+visualstab.Name = "visualstab"
+visualstab.Parent = Holder
+visualstab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+visualstab.BorderSizePixel = 0
+visualstab.Position = UDim2.new(0, 0, 0.112947658, 0)
+visualstab.Size = UDim2.new(0, 149, 0, 49)
+visualstab.Font = Enum.Font.GothamBold
+visualstab.Text = "Visuals"
+visualstab.TextColor3 = Color3.fromRGB(255, 0, 187)
+visualstab.TextSize = 31.000
+
+UICorner.CornerRadius = UDim.new(0, 24)
+UICorner.Parent = visualstab
+
+aimtab.Name = "aimtab"
+aimtab.Parent = Holder
+aimtab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+aimtab.BorderSizePixel = 0
+aimtab.Position = UDim2.new(0.00171821308, 0, 0.242424235, 0)
+aimtab.Size = UDim2.new(0, 149, 0, 49)
+aimtab.Font = Enum.Font.GothamBold
+aimtab.Text = "Aimbot"
+aimtab.TextColor3 = Color3.fromRGB(255, 0, 187)
+aimtab.TextSize = 31.000
+
+UICorner_2.CornerRadius = UDim.new(0, 24)
+UICorner_2.Parent = aimtab
+
+antiaimtab.Name = "antiaimtab"
+antiaimtab.Parent = Holder
+antiaimtab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+antiaimtab.BorderSizePixel = 0
+antiaimtab.Position = UDim2.new(0.00171821308, 0, 0.377410471, 0)
+antiaimtab.Size = UDim2.new(0, 149, 0, 49)
+antiaimtab.Font = Enum.Font.GothamBold
+antiaimtab.Text = "AntiAim"
+antiaimtab.TextColor3 = Color3.fromRGB(255, 0, 187)
+antiaimtab.TextSize = 31.000
+
+UICorner_3.CornerRadius = UDim.new(0, 24)
+UICorner_3.Parent = antiaimtab
+
+misctab.Name = "misctab"
+misctab.Parent = Holder
+misctab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+misctab.BorderSizePixel = 0
+misctab.Position = UDim2.new(0.00171821308, 0, 0.512396693, 0)
+misctab.Size = UDim2.new(0, 149, 0, 49)
+misctab.Font = Enum.Font.GothamBold
+misctab.Text = "Misc"
+misctab.TextColor3 = Color3.fromRGB(255, 0, 187)
+misctab.TextSize = 31.000
+
+UICorner_4.CornerRadius = UDim.new(0, 24)
+UICorner_4.Parent = misctab
+
+visualstabf.Name = "visualstabf"
+visualstabf.Parent = Holder
+visualstabf.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+visualstabf.BorderSizePixel = 0
+visualstabf.Position = UDim2.new(0.257731944, 0, 0.112947658, 0)
+visualstabf.Size = UDim2.new(0, 316, 0, 320)
+visualstabf.Visible = false
+
 ESP.Name = "ESP"
-ESP.Parent = Holder
+ESP.Parent = visualstabf
 ESP.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0, 0, 0.148760334, 0)
+ESP.Position = UDim2.new(-0.00176173449, 0, -0.002720383, 0)
 ESP.Size = UDim2.new(0, 30, 0, 30)
 ESP.Font = Enum.Font.SourceSans
 ESP.Text = " "
@@ -76,11 +151,88 @@ ESPLabel.Text = "WallHacks (restart every round)"
 ESPLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
 ESPLabel.TextSize = 17.000
 
+ForceCH.Name = "ForceCH"
+ForceCH.Parent = visualstabf
+ForceCH.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+ForceCH.BorderSizePixel = 0
+ForceCH.Position = UDim2.new(-0.00176173425, 0, 0.0858729482, 0)
+ForceCH.Size = UDim2.new(0, 30, 0, 30)
+ForceCH.Font = Enum.Font.SourceSans
+ForceCH.Text = " "
+ForceCH.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForceCH.TextSize = 14.000
+
+FCLabel.Name = "FCLabel"
+FCLabel.Parent = ForceCH
+FCLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FCLabel.BackgroundTransparency = 1.000
+FCLabel.BorderSizePixel = 0
+FCLabel.Position = UDim2.new(1, 0, 0, 0)
+FCLabel.Size = UDim2.new(0, 127, 0, 29)
+FCLabel.Font = Enum.Font.GothamBold
+FCLabel.Text = "Force Crosshair"
+FCLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+FCLabel.TextSize = 17.000
+
+aimtabf.Name = "aimtabf"
+aimtabf.Parent = Holder
+aimtabf.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+aimtabf.BorderSizePixel = 0
+aimtabf.Position = UDim2.new(0.257731944, 0, 0.112947658, 0)
+aimtabf.Size = UDim2.new(0, 316, 0, 320)
+aimtabf.Visible = false
+
+ABTC.Name = "ABTC"
+ABTC.Parent = aimtabf
+ABTC.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+ABTC.BorderSizePixel = 0
+ABTC.Position = UDim2.new(-0.00176173449, 0, 0.265056849, 0)
+ABTC.Size = UDim2.new(0, 30, 0, 30)
+ABTC.Font = Enum.Font.SourceSans
+ABTC.Text = " "
+ABTC.TextColor3 = Color3.fromRGB(0, 0, 0)
+ABTC.TextSize = 14.000
+
+ABTCLabel.Name = "ABTCLabel"
+ABTCLabel.Parent = ABTC
+ABTCLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ABTCLabel.BackgroundTransparency = 1.000
+ABTCLabel.BorderSizePixel = 0
+ABTCLabel.Position = UDim2.new(1, 0, 0, 0)
+ABTCLabel.Size = UDim2.new(0, 219, 0, 29)
+ABTCLabel.Font = Enum.Font.GothamBold
+ABTCLabel.Text = "Aimbot Deathmatch Mode"
+ABTCLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+ABTCLabel.TextSize = 17.000
+
+AutoRecoil.Name = "AutoRecoil"
+AutoRecoil.Parent = aimtabf
+AutoRecoil.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+AutoRecoil.BorderSizePixel = 0
+AutoRecoil.Position = UDim2.new(-0.00176173705, 0, 0.173708662, 0)
+AutoRecoil.Size = UDim2.new(0, 30, 0, 30)
+AutoRecoil.Font = Enum.Font.SourceSans
+AutoRecoil.Text = " "
+AutoRecoil.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoRecoil.TextSize = 14.000
+
+ARLabel.Name = "ARLabel"
+ARLabel.Parent = AutoRecoil
+ARLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ARLabel.BackgroundTransparency = 1.000
+ARLabel.BorderSizePixel = 0
+ARLabel.Position = UDim2.new(1, 0, 0, 0)
+ARLabel.Size = UDim2.new(0, 127, 0, 29)
+ARLabel.Font = Enum.Font.GothamBold
+ARLabel.Text = "RCS"
+ARLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+ARLabel.TextSize = 17.000
+
 LegitAimBot.Name = "LegitAimBot"
-LegitAimBot.Parent = Holder
+LegitAimBot.Parent = aimtabf
 LegitAimBot.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 LegitAimBot.BorderSizePixel = 0
-LegitAimBot.Position = UDim2.new(0, 0, 0.23140496, 0)
+LegitAimBot.Position = UDim2.new(-0.00176173449, 0, -0.00132575631, 0)
 LegitAimBot.Size = UDim2.new(0, 30, 0, 30)
 LegitAimBot.Font = Enum.Font.SourceSans
 LegitAimBot.Text = " "
@@ -100,10 +252,10 @@ LABLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
 LABLabel.TextSize = 17.000
 
 RageAimBot.Name = "RageAimBot"
-RageAimBot.Parent = Holder
+RageAimBot.Parent = aimtabf
 RageAimBot.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 RageAimBot.BorderSizePixel = 0
-RageAimBot.Position = UDim2.new(0, 0, 0.311294764, 0)
+RageAimBot.Position = UDim2.new(-0.00176173449, 0, 0.0910640508, 0)
 RageAimBot.Size = UDim2.new(0, 30, 0, 30)
 RageAimBot.Font = Enum.Font.SourceSans
 RageAimBot.Text = " "
@@ -122,80 +274,42 @@ RABLabel.Text = "Rage Aimbot"
 RABLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
 RABLabel.TextSize = 17.000
 
-AutoRecoil.Name = "AutoRecoil"
-AutoRecoil.Parent = Holder
-AutoRecoil.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-AutoRecoil.BorderSizePixel = 0
-AutoRecoil.Position = UDim2.new(0, 0, 0.393939376, 0)
-AutoRecoil.Size = UDim2.new(0, 30, 0, 30)
-AutoRecoil.Font = Enum.Font.SourceSans
-AutoRecoil.Text = " "
-AutoRecoil.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoRecoil.TextSize = 14.000
+antiaimtabf.Name = "antiaimtabf"
+antiaimtabf.Parent = Holder
+antiaimtabf.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+antiaimtabf.BorderSizePixel = 0
+antiaimtabf.Position = UDim2.new(0.257731944, 0, 0.112947658, 0)
+antiaimtabf.Size = UDim2.new(0, 316, 0, 320)
+antiaimtabf.Visible = false
 
-ARLabel.Name = "ARLabel"
-ARLabel.Parent = AutoRecoil
-ARLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ARLabel.BackgroundTransparency = 1.000
-ARLabel.BorderSizePixel = 0
-ARLabel.Position = UDim2.new(1, 0, 0, 0)
-ARLabel.Size = UDim2.new(0, 127, 0, 29)
-ARLabel.Font = Enum.Font.GothamBold
-ARLabel.Text = "RCS"
-ARLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
-ARLabel.TextSize = 17.000
+AntiAimL.Name = "AntiAimL"
+AntiAimL.Parent = antiaimtabf
+AntiAimL.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+AntiAimL.BorderSizePixel = 0
+AntiAimL.Position = UDim2.new(-0.00492629409, 0, 0.176162228, 0)
+AntiAimL.Size = UDim2.new(0, 30, 0, 30)
+AntiAimL.Font = Enum.Font.SourceSans
+AntiAimL.Text = " "
+AntiAimL.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAimL.TextSize = 14.000
 
-RageBot.Name = "RageBot"
-RageBot.Parent = Holder
-RageBot.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-RageBot.BorderSizePixel = 0
-RageBot.Position = UDim2.new(0, 0, 0.476584017, 0)
-RageBot.Size = UDim2.new(0, 30, 0, 30)
-RageBot.Font = Enum.Font.SourceSans
-RageBot.Text = " "
-RageBot.TextColor3 = Color3.fromRGB(0, 0, 0)
-RageBot.TextSize = 14.000
-
-RBLabel.Name = "RBLabel"
-RBLabel.Parent = RageBot
-RBLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RBLabel.BackgroundTransparency = 1.000
-RBLabel.BorderSizePixel = 0
-RBLabel.Position = UDim2.new(1, 0, 0, 0)
-RBLabel.Size = UDim2.new(0, 127, 0, 29)
-RBLabel.Font = Enum.Font.GothamBold
-RBLabel.Text = "Ragebot"
-RBLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
-RBLabel.TextSize = 17.000
-
-ForceCH.Name = "ForceCH"
-ForceCH.Parent = Holder
-ForceCH.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-ForceCH.BorderSizePixel = 0
-ForceCH.Position = UDim2.new(0, 0, 0.559228659, 0)
-ForceCH.Size = UDim2.new(0, 30, 0, 30)
-ForceCH.Font = Enum.Font.SourceSans
-ForceCH.Text = " "
-ForceCH.TextColor3 = Color3.fromRGB(0, 0, 0)
-ForceCH.TextSize = 14.000
-
-FCLabel.Name = "FCLabel"
-FCLabel.Parent = ForceCH
-FCLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FCLabel.BackgroundTransparency = 1.000
-FCLabel.BorderSizePixel = 0
-FCLabel.Position = UDim2.new(1, 0, 0, 0)
-FCLabel.Size = UDim2.new(0, 127, 0, 29)
-FCLabel.Font = Enum.Font.GothamBold
-FCLabel.Text = "Force Crosshair"
-FCLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
-FCLabel.TextSize = 17.000
+AALabel.Name = "AALabel"
+AALabel.Parent = AntiAimL
+AALabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AALabel.BackgroundTransparency = 1.000
+AALabel.BorderSizePixel = 0
+AALabel.Position = UDim2.new(1, 0, 0, 0)
+AALabel.Size = UDim2.new(0, 127, 0, 29)
+AALabel.Font = Enum.Font.GothamBold
+AALabel.Text = "Legit AntiAim"
+AALabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+AALabel.TextSize = 17.000
 
 FakePeek.Name = "FakePeek"
-FakePeek.Parent = Holder
+FakePeek.Parent = antiaimtabf
 FakePeek.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 FakePeek.BorderSizePixel = 0
-FakePeek.Position = UDim2.new(0, 0, 0.6418733, 0)
+FakePeek.Position = UDim2.new(-0.00492629409, 0, 0.0872675925, 0)
 FakePeek.Size = UDim2.new(0, 30, 0, 30)
 FakePeek.Font = Enum.Font.SourceSans
 FakePeek.Text = " "
@@ -214,192 +328,98 @@ FPLabel.Text = "FakePeek"
 FPLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
 FPLabel.TextSize = 17.000
 
-AntiAim.Name = "AntiAim"
-AntiAim.Parent = Holder
-AntiAim.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-AntiAim.BorderSizePixel = 0
-AntiAim.Position = UDim2.new(0, 0, 0.724517941, 0)
-AntiAim.Size = UDim2.new(0, 30, 0, 30)
-AntiAim.Font = Enum.Font.SourceSans
-AntiAim.Text = " "
-AntiAim.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAim.TextSize = 14.000
+RageBot.Name = "RageBot"
+RageBot.Parent = antiaimtabf
+RageBot.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+RageBot.BorderSizePixel = 0
+RageBot.Position = UDim2.new(-0.00492629409, 0, -0.00302168727, 0)
+RageBot.Size = UDim2.new(0, 30, 0, 30)
+RageBot.Font = Enum.Font.SourceSans
+RageBot.Text = " "
+RageBot.TextColor3 = Color3.fromRGB(0, 0, 0)
+RageBot.TextSize = 14.000
 
-AALabel.Name = "AALabel"
-AALabel.Parent = AntiAim
-AALabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AALabel.BackgroundTransparency = 1.000
-AALabel.BorderSizePixel = 0
-AALabel.Position = UDim2.new(1, 0, 0, 0)
-AALabel.Size = UDim2.new(0, 127, 0, 29)
-AALabel.Font = Enum.Font.GothamBold
-AALabel.Text = "AntiAim (E)"
-AALabel.TextColor3 = Color3.fromRGB(255, 0, 187)
-AALabel.TextSize = 17.000
+RBLabel.Name = "RBLabel"
+RBLabel.Parent = RageBot
+RBLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RBLabel.BackgroundTransparency = 1.000
+RBLabel.BorderSizePixel = 0
+RBLabel.Position = UDim2.new(1, 0, 0, 0)
+RBLabel.Size = UDim2.new(0, 127, 0, 29)
+RBLabel.Font = Enum.Font.GothamBold
+RBLabel.Text = "Ragebot"
+RBLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
+RBLabel.TextSize = 17.000
 
-ABTC.Name = "ABTC"
-ABTC.Parent = Holder
-ABTC.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
-ABTC.BorderSizePixel = 0
-ABTC.Position = UDim2.new(0, 0, 0.807162583, 0)
-ABTC.Size = UDim2.new(0, 30, 0, 30)
-ABTC.Font = Enum.Font.SourceSans
-ABTC.Text = " "
-ABTC.TextColor3 = Color3.fromRGB(0, 0, 0)
-ABTC.TextSize = 14.000
+AntiAimSR.Name = "AntiAimSR"
+AntiAimSR.Parent = antiaimtabf
+AntiAimSR.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+AntiAimSR.BorderSizePixel = 0
+AntiAimSR.Position = UDim2.new(-0.00492629409, 0, 0.266787231, 0)
+AntiAimSR.Size = UDim2.new(0, 30, 0, 30)
+AntiAimSR.Font = Enum.Font.SourceSans
+AntiAimSR.Text = " "
+AntiAimSR.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAimSR.TextSize = 14.000
 
-ABTCLabel.Name = "ABTCLabel"
-ABTCLabel.Parent = ABTC
-ABTCLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ABTCLabel.BackgroundTransparency = 1.000
-ABTCLabel.BorderSizePixel = 0
-ABTCLabel.Position = UDim2.new(1, 0, 0, 0)
-ABTCLabel.Size = UDim2.new(0, 219, 0, 29)
-ABTCLabel.Font = Enum.Font.GothamBold
-ABTCLabel.Text = "Aimbot Deathmatch Mode"
-ABTCLabel.TextColor3 = Color3.fromRGB(255, 0, 187)
-ABTCLabel.TextSize = 17.000
+AALabel_2.Name = "AALabel"
+AALabel_2.Parent = AntiAimSR
+AALabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AALabel_2.BackgroundTransparency = 1.000
+AALabel_2.BorderSizePixel = 0
+AALabel_2.Position = UDim2.new(1, 0, 0, 0)
+AALabel_2.Size = UDim2.new(0, 157, 0, 29)
+AALabel_2.Font = Enum.Font.GothamBold
+AALabel_2.Text = "Semirage AntiAim"
+AALabel_2.TextColor3 = Color3.fromRGB(255, 0, 187)
+AALabel_2.TextSize = 17.000
 
-AntiAimStrength.Name = "AntiAimStrength"
-AntiAimStrength.Parent = Holder
-AntiAimStrength.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-AntiAimStrength.BorderSizePixel = 0
-AntiAimStrength.Position = UDim2.new(0.800687313, 0, 0.112947658, 0)
-AntiAimStrength.Size = UDim2.new(0, 116, 0, 322)
+AntiAimR.Name = "AntiAimR"
+AntiAimR.Parent = antiaimtabf
+AntiAimR.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+AntiAimR.BorderSizePixel = 0
+AntiAimR.Position = UDim2.new(-0.00492629409, 0, 0.360537231, 0)
+AntiAimR.Size = UDim2.new(0, 30, 0, 30)
+AntiAimR.Font = Enum.Font.SourceSans
+AntiAimR.Text = " "
+AntiAimR.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAimR.TextSize = 14.000
 
-AAS1.Name = "AAS1"
-AAS1.Parent = AntiAimStrength
-AAS1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS1.BorderSizePixel = 0
-AAS1.Position = UDim2.new(0.00862068962, 0, 0, 0)
-AAS1.Size = UDim2.new(0, 115, 0, 30)
-AAS1.Font = Enum.Font.GothamBold
-AAS1.Text = "AntiAim Strength 1"
-AAS1.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS1.TextScaled = true
-AAS1.TextSize = 14.000
-AAS1.TextWrapped = true
+AALabel_3.Name = "AALabel"
+AALabel_3.Parent = AntiAimR
+AALabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AALabel_3.BackgroundTransparency = 1.000
+AALabel_3.BorderSizePixel = 0
+AALabel_3.Position = UDim2.new(1, 0, 0, 0)
+AALabel_3.Size = UDim2.new(0, 129, 0, 29)
+AALabel_3.Font = Enum.Font.GothamBold
+AALabel_3.Text = "Rage AntiAim"
+AALabel_3.TextColor3 = Color3.fromRGB(255, 0, 187)
+AALabel_3.TextSize = 17.000
 
-AAS2.Name = "AAS2"
-AAS2.Parent = AntiAimStrength
-AAS2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS2.BorderSizePixel = 0
-AAS2.Position = UDim2.new(0.00862068962, 0, 0.0931676999, 0)
-AAS2.Size = UDim2.new(0, 115, 0, 30)
-AAS2.Font = Enum.Font.GothamBold
-AAS2.Text = "AntiAim Strength 2"
-AAS2.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS2.TextScaled = true
-AAS2.TextSize = 14.000
-AAS2.TextWrapped = true
+miscf.Name = "miscf"
+miscf.Parent = Holder
+miscf.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+miscf.BorderSizePixel = 0
+miscf.Position = UDim2.new(0.257731944, 0, 0.112947658, 0)
+miscf.Size = UDim2.new(0, 316, 0, 320)
 
-AAS3.Name = "AAS3"
-AAS3.Parent = AntiAimStrength
-AAS3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS3.BorderSizePixel = 0
-AAS3.Position = UDim2.new(0.00862068962, 0, 0.1863354, 0)
-AAS3.Size = UDim2.new(0, 115, 0, 30)
-AAS3.Font = Enum.Font.GothamBold
-AAS3.Text = "AntiAim Strength 3"
-AAS3.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS3.TextScaled = true
-AAS3.TextSize = 14.000
-AAS3.TextWrapped = true
-
-AAS4.Name = "AAS4"
-AAS4.Parent = AntiAimStrength
-AAS4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS4.BorderSizePixel = 0
-AAS4.Position = UDim2.new(0.00862068962, 0, 0.279503107, 0)
-AAS4.Size = UDim2.new(0, 115, 0, 30)
-AAS4.Font = Enum.Font.GothamBold
-AAS4.Text = "AntiAim Strength 4"
-AAS4.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS4.TextScaled = true
-AAS4.TextSize = 14.000
-AAS4.TextWrapped = true
-
-AAS5.Name = "AAS5"
-AAS5.Parent = AntiAimStrength
-AAS5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS5.BorderSizePixel = 0
-AAS5.Position = UDim2.new(0.00862068962, 0, 0.372670799, 0)
-AAS5.Size = UDim2.new(0, 115, 0, 30)
-AAS5.Font = Enum.Font.GothamBold
-AAS5.Text = "AntiAim Strength 5"
-AAS5.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS5.TextScaled = true
-AAS5.TextSize = 14.000
-AAS5.TextWrapped = true
-
-AAS6.Name = "AAS6"
-AAS6.Parent = AntiAimStrength
-AAS6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS6.BorderSizePixel = 0
-AAS6.Position = UDim2.new(0.00862068962, 0, 0.465838492, 0)
-AAS6.Size = UDim2.new(0, 115, 0, 30)
-AAS6.Font = Enum.Font.GothamBold
-AAS6.Text = "AntiAim Strength 6"
-AAS6.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS6.TextScaled = true
-AAS6.TextSize = 14.000
-AAS6.TextWrapped = true
-
-AAS7.Name = "AAS7"
-AAS7.Parent = AntiAimStrength
-AAS7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS7.BorderSizePixel = 0
-AAS7.Position = UDim2.new(0.00862068962, 0, 0.559006214, 0)
-AAS7.Size = UDim2.new(0, 115, 0, 30)
-AAS7.Font = Enum.Font.GothamBold
-AAS7.Text = "AntiAim Strength 7"
-AAS7.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS7.TextScaled = true
-AAS7.TextSize = 14.000
-AAS7.TextWrapped = true
-
-AAS8.Name = "AAS8"
-AAS8.Parent = AntiAimStrength
-AAS8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS8.BorderSizePixel = 0
-AAS8.Position = UDim2.new(0.00862068962, 0, 0.652173936, 0)
-AAS8.Size = UDim2.new(0, 115, 0, 30)
-AAS8.Font = Enum.Font.GothamBold
-AAS8.Text = "AntiAim Strength 8"
-AAS8.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS8.TextScaled = true
-AAS8.TextSize = 14.000
-AAS8.TextWrapped = true
-
-AAS9.Name = "AAS9"
-AAS9.Parent = AntiAimStrength
-AAS9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS9.BorderSizePixel = 0
-AAS9.Position = UDim2.new(0.00862068962, 0, 0.745341659, 0)
-AAS9.Size = UDim2.new(0, 115, 0, 30)
-AAS9.Font = Enum.Font.GothamBold
-AAS9.Text = "AntiAim Strength 9"
-AAS9.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS9.TextScaled = true
-AAS9.TextSize = 14.000
-AAS9.TextWrapped = true
-
-AAS10.Name = "AAS10"
-AAS10.Parent = AntiAimStrength
-AAS10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AAS10.BorderSizePixel = 0
-AAS10.Position = UDim2.new(0.00862068962, 0, 0.838509381, 0)
-AAS10.Size = UDim2.new(0, 115, 0, 30)
-AAS10.Font = Enum.Font.GothamBold
-AAS10.Text = "AntiAim Strength 10"
-AAS10.TextColor3 = Color3.fromRGB(255, 255, 255)
-AAS10.TextScaled = true
-AAS10.TextSize = 14.000
-AAS10.TextWrapped = true
+TextLabel.Parent = miscf
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.00316455704, 0, 0.346875012, 0)
+TextLabel.Size = UDim2.new(0, 314, 0, 58)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Nothing here yet :("
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 179)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 42.000
+TextLabel.TextWrapped = true
 
 -- Scripts:
 
-local function RLTABY_fake_script() -- browhoyoudonotdude.namerandomizer 
+local function QLJX_fake_script() -- browhoyoudonotdude.namerandomizer 
 	local script = Instance.new('LocalScript', browhoyoudonotdude)
 
 	local rn = math.random(1,10) 
@@ -444,15 +464,15 @@ local function RLTABY_fake_script() -- browhoyoudonotdude.namerandomizer
 		script.Parent.Name = "PinkApple_yapostroz582135x"
 	end
 end
-coroutine.wrap(RLTABY_fake_script)()
-local function SMAT_fake_script() -- Holder.dragreal 
+coroutine.wrap(QLJX_fake_script)()
+local function GRMYPGM_fake_script() -- Holder.dragreal 
 	local script = Instance.new('LocalScript', Holder)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(SMAT_fake_script)()
-local function XLHVVTN_fake_script() -- Holder.visible 
+coroutine.wrap(GRMYPGM_fake_script)()
+local function UVEO_fake_script() -- Holder.visible 
 	local script = Instance.new('LocalScript', Holder)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key)
@@ -465,8 +485,52 @@ local function XLHVVTN_fake_script() -- Holder.visible
 		end
 	end)
 end
-coroutine.wrap(XLHVVTN_fake_script)()
-local function ZOPHDM_fake_script() -- ESP.Do 
+coroutine.wrap(UVEO_fake_script)()
+local function HZNJ_fake_script() -- visualstab.Open 
+	local script = Instance.new('LocalScript', visualstab)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.antiaimtabf.Visible = false
+		script.Parent.Parent.miscf.Visible = false
+		script.Parent.Parent.aimtabf.Visible = false
+		script.Parent.Parent.visualstabf.Visible = true
+	end)
+end
+coroutine.wrap(HZNJ_fake_script)()
+local function YOVMWUY_fake_script() -- aimtab.Open 
+	local script = Instance.new('LocalScript', aimtab)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.antiaimtabf.Visible = false
+		script.Parent.Parent.miscf.Visible = false
+		script.Parent.Parent.aimtabf.Visible = true
+		script.Parent.Parent.visualstabf.Visible = false
+	end)
+end
+coroutine.wrap(YOVMWUY_fake_script)()
+local function PXOA_fake_script() -- antiaimtab.Open 
+	local script = Instance.new('LocalScript', antiaimtab)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.antiaimtabf.Visible = true
+		script.Parent.Parent.miscf.Visible = false
+		script.Parent.Parent.aimtabf.Visible = false
+		script.Parent.Parent.visualstabf.Visible = false
+	end)
+end
+coroutine.wrap(PXOA_fake_script)()
+local function EKDDI_fake_script() -- misctab.Open 
+	local script = Instance.new('LocalScript', misctab)
+
+	script.Parent.MouseButton1Up:Connect(function()
+		script.Parent.Parent.antiaimtabf.Visible = false
+		script.Parent.Parent.miscf.Visible = true
+		script.Parent.Parent.aimtabf.Visible = false
+		script.Parent.Parent.visualstabf.Visible = false
+	end)
+end
+coroutine.wrap(EKDDI_fake_script)()
+local function LHOHF_fake_script() -- ESP.Do 
 	local script = Instance.new('LocalScript', ESP)
 
 	local ESP = script.Parent
@@ -490,8 +554,84 @@ local function ZOPHDM_fake_script() -- ESP.Do
 		end
 	end)
 end
-coroutine.wrap(ZOPHDM_fake_script)()
-local function QCQX_fake_script() -- LegitAimBot.Do 
+coroutine.wrap(LHOHF_fake_script)()
+local function FHKECT_fake_script() -- ForceCH.Do 
+	local script = Instance.new('LocalScript', ForceCH)
+
+	local isfchon = false
+	
+	local RageBot = script.Parent
+	
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			isfchon = true
+		else
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			isfchon = false
+		end
+	end)
+	
+	while wait() do
+		local success,errorMessage = pcall(function()
+		if isfchon == true then
+			wait()
+			game.Players.LocalPlayer.PlayerGui.HUD.HUD.Crosshair.Visible = true
+			end
+			end)
+	end
+end
+coroutine.wrap(FHKECT_fake_script)()
+local function JOQHY_fake_script() -- ABTC.Do 
+	local script = Instance.new('LocalScript', ABTC)
+
+	local RageBot = script.Parent
+	
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			_G.TeamCheck = false
+		else
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			_G.TeamCheck = true
+		end
+	end)
+end
+coroutine.wrap(JOQHY_fake_script)()
+local function JNKZNY_fake_script() -- AutoRecoil.Do 
+	local script = Instance.new('LocalScript', AutoRecoil)
+
+	local AutoRecoil = script.Parent
+	local aron = false
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if AutoRecoil.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			AutoRecoil.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			aron = true
+		else
+			AutoRecoil.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			aron = false
+		end
+	end)
+	
+	while wait() do
+		if aron == true then
+			local success,errorMessage = pcall(function()
+			local maxRecoil = 0.2
+			local function onRecoil(input, gameProcessedEvent) 
+				if input.UserInputType == Enum.UserInputType.MouseMovement then
+					input.UserInputDelta = input.UserInputDelta / (1 + maxRecoil)
+				end
+				game:GetService("UserInputService").InputChanged:Connect(onRecoil)
+				end
+				end)
+		end
+	end
+end
+coroutine.wrap(JNKZNY_fake_script)()
+local function QOSL_fake_script() -- LegitAimBot.Do 
 	local script = Instance.new('LocalScript', LegitAimBot)
 
 	local LegitAimBot = script.Parent
@@ -606,8 +746,8 @@ local function QCQX_fake_script() -- LegitAimBot.Do
 		end
 	end)
 end
-coroutine.wrap(QCQX_fake_script)()
-local function UZPMKL_fake_script() -- RageAimBot.Do 
+coroutine.wrap(QOSL_fake_script)()
+local function FMDUCL_fake_script() -- RageAimBot.Do 
 	local script = Instance.new('LocalScript', RageAimBot)
 
 	local RageAimBot = script.Parent
@@ -722,95 +862,42 @@ local function UZPMKL_fake_script() -- RageAimBot.Do
 		end
 	end)
 end
-coroutine.wrap(UZPMKL_fake_script)()
-local function KENNSGQ_fake_script() -- AutoRecoil.Do 
-	local script = Instance.new('LocalScript', AutoRecoil)
+coroutine.wrap(FMDUCL_fake_script)()
+local function DLEH_fake_script() -- AntiAimL.Do 
+	local script = Instance.new('LocalScript', AntiAimL)
 
-	local AutoRecoil = script.Parent
-	local aron = false
+	local antiaim = false
+	
+	local RageBot = script.Parent
+	
 	
 	script.Parent.MouseButton1Up:Connect(function()
-		if AutoRecoil.BackgroundColor3 == Color3.fromRGB(150,150,150) then
-			AutoRecoil.BackgroundColor3 = Color3.fromRGB(255,0,100)
-			aron = true
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			antiaim = true
 		else
-			AutoRecoil.BackgroundColor3 = Color3.fromRGB(150,150,150)
-			aron = false
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			antiaim = false
 		end
 	end)
 	
 	while wait() do
-		if aron == true then
+		if antiaim == true then
 			local success,errorMessage = pcall(function()
-			local maxRecoil = 0.2
-			local function onRecoil(input, gameProcessedEvent) 
-				if input.UserInputType == Enum.UserInputType.MouseMovement then
-					input.UserInputDelta = input.UserInputDelta / (1 + maxRecoil)
-				end
-				game:GetService("UserInputService").InputChanged:Connect(onRecoil)
-				end
-				end)
-		end
-	end
-end
-coroutine.wrap(KENNSGQ_fake_script)()
-local function MOOXXJV_fake_script() -- RageBot.Do 
-	local script = Instance.new('LocalScript', RageBot)
-
-	local isrbon = false
-	
-	local RageBot = script.Parent
-	
-	
-	script.Parent.MouseButton1Up:Connect(function()
-		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
-			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
-			isrbon = true
-		else
-			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
-			isrbon = false
-		end
-	end)
-	
-	while wait() do
-		local success,errorMessage = pcall(function()
-		if isrbon == true then
-			wait()
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-			end
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0.05,0,0.05)
+				wait()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0.05,0,0.05)
+				wait()
 			end)
-	end
-end
-coroutine.wrap(MOOXXJV_fake_script)()
-local function YHZK_fake_script() -- ForceCH.Do 
-	local script = Instance.new('LocalScript', ForceCH)
-
-	local isfchon = false
-	
-	local RageBot = script.Parent
-	
-	
-	script.Parent.MouseButton1Up:Connect(function()
-		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
-			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
-			isfchon = true
-		else
-			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
-			isfchon = false
-		end
-	end)
-	
-	while wait() do
-		local success,errorMessage = pcall(function()
-		if isfchon == true then
-			wait()
-			game.Players.LocalPlayer.PlayerGui.HUD.HUD.Crosshair.Visible = true
+			
+			if errorMessage then
+				warn(errorMessage)
 			end
-			end)
+		end
 	end
 end
-coroutine.wrap(YHZK_fake_script)()
-local function ANIYXC_fake_script() -- FakePeek.Do 
+coroutine.wrap(DLEH_fake_script)()
+local function MFNSH_fake_script() -- FakePeek.Do 
 	local script = Instance.new('LocalScript', FakePeek)
 
 	local fakepeek = false
@@ -839,9 +926,37 @@ local function ANIYXC_fake_script() -- FakePeek.Do
 			end
 	end
 end
-coroutine.wrap(ANIYXC_fake_script)()
-local function NDFPXB_fake_script() -- AntiAim.Do 
-	local script = Instance.new('LocalScript', AntiAim)
+coroutine.wrap(MFNSH_fake_script)()
+local function QWJCJB_fake_script() -- RageBot.Do 
+	local script = Instance.new('LocalScript', RageBot)
+
+	local isrbon = false
+	
+	local RageBot = script.Parent
+	
+	
+	script.Parent.MouseButton1Up:Connect(function()
+		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
+			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
+			isrbon = true
+		else
+			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
+			isrbon = false
+		end
+	end)
+	
+	while wait() do
+		local success,errorMessage = pcall(function()
+		if isrbon == true then
+			wait()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+			end
+			end)
+	end
+end
+coroutine.wrap(QWJCJB_fake_script)()
+local function CTIOKC_fake_script() -- AntiAimSR.Do 
+	local script = Instance.new('LocalScript', AntiAimSR)
 
 	local antiaim = false
 	
@@ -858,124 +973,53 @@ local function NDFPXB_fake_script() -- AntiAim.Do
 		end
 	end)
 	
-	game:GetService("UserInputService").InputBegan:Connect(function(key)
-		if key.KeyCode == Enum.KeyCode.E then
-			if antiaim == false then
-				antiaim = true
-				RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
-			else
-				antiaim = false
-				RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
-			end
-		end
-	end)
-	
 	while wait() do
 		if antiaim == true then
 			local success,errorMessage = pcall(function()
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(script.Parent.CurrentStrength.Value,0,script.Parent.CurrentStrength.Value)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0.2,0,0.2)
 				wait()
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(script.Parent.CurrentStrength.Value,0,script.Parent.CurrentStrength.Value)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0.2,0,0.2)
 				wait()
 			end)
+			
+			if errorMessage then
+				warn(errorMessage)
+			end
 		end
 	end
 end
-coroutine.wrap(NDFPXB_fake_script)()
-local function ZDDP_fake_script() -- ABTC.Do 
-	local script = Instance.new('LocalScript', ABTC)
+coroutine.wrap(CTIOKC_fake_script)()
+local function GNPZGAU_fake_script() -- AntiAimR.Do 
+	local script = Instance.new('LocalScript', AntiAimR)
 
+	local antiaim = false
+	
 	local RageBot = script.Parent
 	
 	
 	script.Parent.MouseButton1Up:Connect(function()
 		if RageBot.BackgroundColor3 == Color3.fromRGB(150,150,150) then
 			RageBot.BackgroundColor3 = Color3.fromRGB(255,0,100)
-			_G.TeamCheck = false
+			antiaim = true
 		else
 			RageBot.BackgroundColor3 = Color3.fromRGB(150,150,150)
-			_G.TeamCheck = true
+			antiaim = false
 		end
 	end)
+	
+	while wait() do
+		if antiaim == true then
+			local success,errorMessage = pcall(function()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(1,0,1)
+				wait()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(1,0,1)
+				wait()
+			end)
+			
+			if errorMessage then
+				warn(errorMessage)
+			end
+		end
+	end
 end
-coroutine.wrap(ZDDP_fake_script)()
-local function TNQXF_fake_script() -- AAS1.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS1)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.1
-	end)
-end
-coroutine.wrap(TNQXF_fake_script)()
-local function UZWTYYY_fake_script() -- AAS2.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS2)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.2
-	end)
-end
-coroutine.wrap(UZWTYYY_fake_script)()
-local function TEDY_fake_script() -- AAS3.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS3)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.3
-	end)
-end
-coroutine.wrap(TEDY_fake_script)()
-local function TXCN_fake_script() -- AAS4.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS4)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.4
-	end)
-end
-coroutine.wrap(TXCN_fake_script)()
-local function BMEJDA_fake_script() -- AAS5.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS5)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.5
-	end)
-end
-coroutine.wrap(BMEJDA_fake_script)()
-local function EKARF_fake_script() -- AAS6.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS6)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.6
-	end)
-end
-coroutine.wrap(EKARF_fake_script)()
-local function EQOFF_fake_script() -- AAS7.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS7)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.7
-	end)
-end
-coroutine.wrap(EQOFF_fake_script)()
-local function IGJIEP_fake_script() -- AAS8.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS8)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.8
-	end)
-end
-coroutine.wrap(IGJIEP_fake_script)()
-local function RXMHLVD_fake_script() -- AAS9.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS9)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 0.9
-	end)
-end
-coroutine.wrap(RXMHLVD_fake_script)()
-local function UEOGNE_fake_script() -- AAS10.StrengthChanger 
-	local script = Instance.new('LocalScript', AAS10)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent.AntiAim.CurrentStrength.Value = 1.5
-	end)
-end
-coroutine.wrap(UEOGNE_fake_script)()
+coroutine.wrap(GNPZGAU_fake_script)()
