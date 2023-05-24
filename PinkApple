@@ -45,7 +45,7 @@ local TextLabel = Instance.new("TextLabel")
 --Properties:
 
 browhoyoudonotdude.Name = "browhoyoudonotdude"
-browhoyoudonotdude.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+browhoyoudonotdude.Parent = game.CoreGui
 
 Holder.Name = "Holder"
 Holder.Parent = browhoyoudonotdude
